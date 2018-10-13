@@ -37,7 +37,7 @@
 				<key>bundle-version</key>
 				<string>1.0.0</string>
 				<key>kind</key>
-				<string>MasterComComm</string>
+				<string>software</string>
 				<key>title</key>
 				<string>slsw</string>
 			</dict>
