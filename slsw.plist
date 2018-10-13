@@ -11,7 +11,7 @@
 						<key>kind</key>
 						<string>software-package</string>
 						<key>url</key>
-						<string>https://raw.githubusercontent.com/q269384828/slsw/master/slsw.ipa</string>
+						<string>https://github.com/q269384828/slsw/raw/master/%E5%B1%B1%E4%B8%9C%E5%9B%9B%E8%BD%AE%E5%8D%81%E7%BB%B4.ipa</string>
 					</dict>
 					<dict>
 						<key>kind</key>
@@ -19,7 +19,7 @@
 						<key>needs-shine</key>
 						<true/>
 						<key>url</key>
-						<string>http://211.137.190.70:8092/mtapp/download/······os/icon.png</string>
+						<string>http://211.137.190.70:8092/mtapp/download/ios/icon.png</string>
 					</dict>
 					<dict>
 						<key>kind</key>
