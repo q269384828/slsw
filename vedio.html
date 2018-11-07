@@ -8,21 +8,38 @@
     <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
 </head>
     <body>
+        <!-- class 属性：
+             .vjs-fluid  自动计算
+             .vjs-4-3    指定比率
+             .vjs-16-9   指定比率 样式也需要设置起始宽高才能显示图片
+        -->
+
+
         <video id="example"  class="video-js">
-            <source 
-                type="application/x-mpegURL"
-                src="http://119.29.18.110:6604/hls/1_dfb81000_1_1.m3u8?JSESSIONID=82d0e1da-c63d-4e3b-8c66-00fdee1bb0a5">
+            <source  type="application/x-mpegURL"
+                src="http://119.29.18.110:6604/hls/1_dfb81000_1_1.m3u8?JSESSIONID=b086e71e-12e3-42a7-8296-aa0734140bcb">
         </video>
         <script src="https://unpkg.com/video.js/dist/video.js"></script>
         <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
         <script>
             //视频插件要初始化完成后才能调用
             var player = videojs('example',{
-                controls:true,
-                width:300,
-                height:200,
-                preload:'none'
+                controls:true, //控制条
+                preload:'none', // 预加载
+                poster:'', // 最初显示的图片
+                width:300,   
+                height:200
             });
+
+            // player.on('play',function(){
+            //     console.log('play');
+            // });
+            // player.on('pause',function(){
+            //     console.log('pause');
+            // });
+            // player.on('ended',function(){
+            //     console.log('ended');
+            // });
         </script>
     </body>
 </html>
